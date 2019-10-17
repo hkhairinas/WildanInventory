@@ -16,18 +16,22 @@ namespace WildanInventory
     public partial class formProduk : Form
     {
         Connection conn = new Connection();
-        int currentRecord = 0;
+        int totRec = 0;
         int totalRecord = 0;
-        int Barcode = 0;
+        int off = 0;
         public formProduk()
         {
             InitializeComponent();
+            MySqlConnection db = new MySqlConnection(conn.connect());
+            db.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM product", db);
+            DataTable dat = new DataTable();
+            da.Fill(dat);
+            totalRecord = dat.Rows.Count;
         }
 
         private void FormProduk_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'wildaninventoryDataProduk.product' table. You can move, or remove it, as needed.
-            /*this.productTableAdapter.Fill(this.wildaninventoryDataProduk.product);*/
             GridFill();
         }
 
@@ -38,16 +42,18 @@ namespace WildanInventory
                 {
                     db.Open();
                     MySqlDataAdapter sda = new MySqlDataAdapter("ProductView", db);
+                    sda.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    sda.SelectCommand.Parameters.AddWithValue("_OFF", off);
                     DataTable dt = new DataTable();
                     sda.Fill(dt);
+                    totRec = dt.Rows.Count;
                     dataGWP.DataSource = dt;
-                    currentRecord = 0;
-                    totalRecord = dt.Rows.Count;
-                    label5.Text = totalRecord.ToString();
+                    label5.Text ="Menampilkan "+totRec+  " dari "+totalRecord.ToString()+" Data";
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    db.Close();
                 }
         }
 
@@ -59,12 +65,16 @@ namespace WildanInventory
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
-
+            totRec -= 10;
+            off = off - 10;
+            GridFill();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-
+            totRec += 10;
+            off = off + 10;
+            GridFill();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -105,6 +115,10 @@ namespace WildanInventory
                 {
                     MessageBox.Show(ex.Message);
                 }
+            if(txtSearch.Text == "")
+            {
+                GridFill();
+            }
         }
 
         private void dataGWP_DoubleClick(object sender, EventArgs e)
@@ -133,9 +147,9 @@ namespace WildanInventory
         void Clear()
         {
             txtBar.Text = txtBuy.Text = txtCat.Text = txtName.Text = txtUom.Text = txtStock.Text = txtPrice.Text = txtSell.Text = "";
-            Barcode = 0;
-            btnAdd.Text = "Save";
+            btnAdd.Text = "Simpan";
             btnDel.Enabled = false;
+            btnCancel.Enabled = false;
         }
     }
 }
