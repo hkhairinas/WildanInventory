@@ -1,0 +1,127 @@
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csprojAssemblyReference.cache
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formLogin.resources
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.Properties.Resources.resources
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csproj.GenerateResource.cache
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csproj.CoreCompileInputs.cache
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WildanInventory.exe.config
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WildanInventory.exe
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WildanInventory.pdb
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\BouncyCastle.Crypto.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.SqlServer.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Google.Protobuf.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Web.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Renci.SshNet.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Helpers.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Razor.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Razor.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.Data.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.WebData.dll
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.SqlServer.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Google.Protobuf.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Web.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Renci.SshNet.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Helpers.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Razor.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Razor.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.Data.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.WebData.xml
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csproj.CopyComplete
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.exe
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.pdb
+D:\My Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formProduk.resources
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WildanInventory.exe.config
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WildanInventory.exe
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WildanInventory.pdb
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\BouncyCastle.Crypto.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.SqlServer.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Google.Protobuf.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.Entity.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Renci.SshNet.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Helpers.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Razor.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.Data.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.WebData.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\EntityFramework.SqlServer.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Google.Protobuf.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\Renci.SshNet.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Helpers.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.Razor.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.Data.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\WebMatrix.WebData.xml
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formAdd.resources
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formLogin.resources
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formMain.resources
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formProduk.resources
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.Properties.Resources.resources
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csproj.GenerateResource.cache
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csproj.CopyComplete
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.exe
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.pdb
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csprojAssemblyReference.cache
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Web.dll
+E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formCashier.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csprojAssemblyReference.cache
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formAdd.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formCashier.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formLogin.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formMain.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formProduk.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.Properties.Resources.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csproj.GenerateResource.cache
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.exe
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.pdb
+E:\Documents\GitHub\WildanInventory\bin\Debug\WildanInventory.exe.config
+E:\Documents\GitHub\WildanInventory\bin\Debug\WildanInventory.exe
+E:\Documents\GitHub\WildanInventory\bin\Debug\WildanInventory.pdb
+E:\Documents\GitHub\WildanInventory\bin\Debug\BouncyCastle.Crypto.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\EntityFramework.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\EntityFramework.SqlServer.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\Google.Protobuf.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Data.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Data.Entity.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Web.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\Renci.SshNet.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.Helpers.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.Razor.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\WebMatrix.Data.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\WebMatrix.WebData.dll
+E:\Documents\GitHub\WildanInventory\bin\Debug\EntityFramework.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\EntityFramework.SqlServer.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\Google.Protobuf.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\Renci.SshNet.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.Helpers.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.Razor.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\WebMatrix.Data.xml
+E:\Documents\GitHub\WildanInventory\bin\Debug\WebMatrix.WebData.xml
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csproj.CopyComplete
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.AboutBox.resources
