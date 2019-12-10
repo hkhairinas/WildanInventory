@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridCashier = new System.Windows.Forms.DataGridView();
             this.Barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPay = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
@@ -40,27 +41,29 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridCashier)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridCashier
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridCashier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridCashier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridCashier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Barcode,
             this.Nama,
             this.Qty,
-            this.Harga});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 210);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1317, 412);
-            this.dataGridView1.TabIndex = 0;
+            this.Harga,
+            this.Sub});
+            this.dataGridCashier.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridCashier.Location = new System.Drawing.Point(0, 210);
+            this.dataGridCashier.Name = "dataGridCashier";
+            this.dataGridCashier.RowHeadersWidth = 62;
+            this.dataGridCashier.RowTemplate.Height = 28;
+            this.dataGridCashier.Size = new System.Drawing.Size(1317, 412);
+            this.dataGridCashier.TabIndex = 0;
+            this.dataGridCashier.ColumnToolTipTextChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dataGridCashier_ColumnToolTipTextChanged);
             // 
             // Barcode
             // 
@@ -85,6 +88,12 @@
             this.Harga.HeaderText = "Harga";
             this.Harga.MinimumWidth = 8;
             this.Harga.Name = "Harga";
+            // 
+            // Sub
+            // 
+            this.Sub.HeaderText = "Sub Total";
+            this.Sub.MinimumWidth = 8;
+            this.Sub.Name = "Sub";
             // 
             // btnPay
             // 
@@ -172,13 +181,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1317, 689);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridCashier);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "formCashier";
             this.Text = "Kasir ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridCashier)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -189,17 +198,18 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridCashier;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Barcode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Barcode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Harga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sub;
     }
 }

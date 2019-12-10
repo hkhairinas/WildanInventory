@@ -100,10 +100,6 @@ E:\Documents\GitHub\WildanInventory\bin\Debug\EntityFramework.dll
 E:\Documents\GitHub\WildanInventory\bin\Debug\EntityFramework.SqlServer.dll
 E:\Documents\GitHub\WildanInventory\bin\Debug\Google.Protobuf.dll
 E:\Documents\GitHub\WildanInventory\bin\Debug\Microsoft.Web.Infrastructure.dll
-E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Data.dll
-E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Data.Entity.dll
-E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Data.Entity.EF6.dll
-E:\Documents\GitHub\WildanInventory\bin\Debug\MySql.Web.dll
 E:\Documents\GitHub\WildanInventory\bin\Debug\Renci.SshNet.dll
 E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.Helpers.dll
 E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.Razor.dll

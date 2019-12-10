@@ -32,6 +32,7 @@ namespace WildanInventory
 
         private void FormProduk_Load(object sender, EventArgs e)
         {
+            Clear();
             GridFill();
         }
 
@@ -126,30 +127,58 @@ namespace WildanInventory
             using (MySqlConnection db = new MySqlConnection(conn.connect()))
                 if(dataGWP.CurrentRow.Index != -1)
                 {
-                    txtBar.Text = dataGWP.CurrentRow.Cells[0].Value.ToString();
-                    txtCat.Text = dataGWP.CurrentRow.Cells[1].Value.ToString();
-                    txtName.Text = dataGWP.CurrentRow.Cells[2].Value.ToString();
-                    txtUom.Text = dataGWP.CurrentRow.Cells[3].Value.ToString();
-                    txtStock.Text = dataGWP.CurrentRow.Cells[4].Value.ToString();
-                    txtSell.Text = dataGWP.CurrentRow.Cells[5].Value.ToString();
-                    txtBuy.Text = dataGWP.CurrentRow.Cells[6].Value.ToString();
-                    txtPrice.Text = dataGWP.CurrentRow.Cells[7].Value.ToString();
+                    txtID.Text = dataGWP.CurrentRow.Cells[0].Value.ToString();
+                    txtBar.Text = dataGWP.CurrentRow.Cells[1].Value.ToString();
+                    txtCat.Text = dataGWP.CurrentRow.Cells[2].Value.ToString();
+                    txtName.Text = dataGWP.CurrentRow.Cells[3].Value.ToString();
+                    txtUom.Text = dataGWP.CurrentRow.Cells[4].Value.ToString();
+                    txtStock.Text = dataGWP.CurrentRow.Cells[5].Value.ToString();
+                    txtSell.Text = dataGWP.CurrentRow.Cells[6].Value.ToString();
+                    txtBuy.Text = dataGWP.CurrentRow.Cells[7].Value.ToString();
+                    txtPrice.Text = dataGWP.CurrentRow.Cells[8].Value.ToString();
                     btnCancel.Enabled = Enabled;
                     btnDel.Enabled = Enabled;
+                    btnAdd.Text = "Simpan";
                 }
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Clear();
         }
 
         void Clear()
         {
-            txtBar.Text = txtBuy.Text = txtCat.Text = txtName.Text = txtUom.Text = txtStock.Text = txtPrice.Text = txtSell.Text = "";
-            btnAdd.Text = "Simpan";
+            txtID.Text = txtBar.Text = txtBuy.Text = txtCat.Text = txtName.Text = txtUom.Text = txtStock.Text = txtPrice.Text = txtSell.Text = "";
+            btnAdd.Text = "Tambah";
             btnDel.Enabled = false;
             btnCancel.Enabled = false;
+        }
+
+        private void btnDel_Click_1(object sender, EventArgs e)
+        {
+            using (MySqlConnection db = new MySqlConnection(conn.connect()))
+                try
+                {
+                    db.Open();
+                    MySqlCommand msc = new MySqlCommand("DeleteByID", db);
+                    msc.CommandType = CommandType.StoredProcedure;
+                    msc.Parameters.AddWithValue("_ProductID", this.txtID.Text);
+                    msc.Parameters.AddWithValue("_Barcode", this.txtBar.Text);
+                    MySqlDataReader dr = msc.ExecuteReader();
+                    MessageBox.Show("Sukses Menghapus");
+                    Clear();
+                    GridFill();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+        }
+
+        private void btnEdit_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

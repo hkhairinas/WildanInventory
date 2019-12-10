@@ -16,6 +16,7 @@ namespace WildanInventory
         public formMain()
         {
             InitializeComponent();
+            toolStripStatusLabel1.Text = "Hai, Admin!";
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,6 +52,22 @@ namespace WildanInventory
         private void laporanPenjualanToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Yakin akan Keluar?", "Keluar Aplikasi",MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formLogin fl = new formLogin();
+            fl.Show();
         }
     }
 }
