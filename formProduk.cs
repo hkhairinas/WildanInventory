@@ -28,6 +28,7 @@ namespace WildanInventory
             DataTable dat = new DataTable();
             da.Fill(dat);
             totalRecord = dat.Rows.Count;
+            totRec = 10;
         }
 
         private void FormProduk_Load(object sender, EventArgs e)
@@ -47,7 +48,6 @@ namespace WildanInventory
                     sda.SelectCommand.Parameters.AddWithValue("_OFF", off);
                     DataTable dt = new DataTable();
                     sda.Fill(dt);
-                    totRec = dt.Rows.Count;
                     dataGWP.DataSource = dt;
                     label5.Text ="Menampilkan "+totRec+  " dari "+totalRecord.ToString()+" Data";
                 }

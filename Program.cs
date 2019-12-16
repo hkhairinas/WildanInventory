@@ -16,7 +16,7 @@ namespace WildanInventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formCashier());
+            Application.Run(new formLogin());
         }
     }
 }
