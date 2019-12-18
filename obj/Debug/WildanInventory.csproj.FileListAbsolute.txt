@@ -82,16 +82,6 @@ E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInvento
 E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.csprojAssemblyReference.cache
 E:\Documents\Visual Studio 2019\Projects\WildanInventory\bin\Debug\MySql.Web.dll
 E:\Documents\Visual Studio 2019\Projects\WildanInventory\obj\Debug\WildanInventory.formCashier.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csprojAssemblyReference.cache
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formAdd.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formCashier.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formLogin.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formMain.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formProduk.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.Properties.Resources.resources
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csproj.GenerateResource.cache
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.exe
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.pdb
 E:\Documents\GitHub\WildanInventory\bin\Debug\WildanInventory.exe.config
 E:\Documents\GitHub\WildanInventory\bin\Debug\WildanInventory.exe
 E:\Documents\GitHub\WildanInventory\bin\Debug\WildanInventory.pdb
@@ -119,5 +109,15 @@ E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\Documents\GitHub\WildanInventory\bin\Debug\System.Web.WebPages.Razor.xml
 E:\Documents\GitHub\WildanInventory\bin\Debug\WebMatrix.Data.xml
 E:\Documents\GitHub\WildanInventory\bin\Debug\WebMatrix.WebData.xml
-E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csproj.CopyComplete
 E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.AboutBox.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formAddUser.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formAdd.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formCashier.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formLogin.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formMain.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.formProduk.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.Properties.Resources.resources
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csproj.GenerateResource.cache
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.csproj.CopyComplete
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.exe
+E:\Documents\GitHub\WildanInventory\obj\Debug\WildanInventory.pdb

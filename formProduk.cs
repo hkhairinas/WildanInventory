@@ -19,6 +19,8 @@ namespace WildanInventory
         int totRec = 0;
         int totalRecord = 0;
         int off = 0;
+        string stitle = "Wildan Inventory";
+        MySqlDataReader sdr;
         public formProduk()
         {
             InitializeComponent();
@@ -133,50 +135,81 @@ namespace WildanInventory
                     txtName.Text = dataGWP.CurrentRow.Cells[3].Value.ToString();
                     txtUom.Text = dataGWP.CurrentRow.Cells[4].Value.ToString();
                     txtStock.Text = dataGWP.CurrentRow.Cells[5].Value.ToString();
-                    txtSell.Text = dataGWP.CurrentRow.Cells[6].Value.ToString();
-                    txtBuy.Text = dataGWP.CurrentRow.Cells[7].Value.ToString();
+                    txtBuy.Text = dataGWP.CurrentRow.Cells[6].Value.ToString();
+                    txtSell.Text = dataGWP.CurrentRow.Cells[7].Value.ToString();
                     txtPrice.Text = dataGWP.CurrentRow.Cells[8].Value.ToString();
                     btnCancel.Enabled = Enabled;
                     btnDel.Enabled = Enabled;
-                    btnAdd.Text = "Simpan";
+                    btnEdit.Enabled = Enabled;
                 }
         }
 
         void Clear()
         {
             txtID.Text = txtBar.Text = txtBuy.Text = txtCat.Text = txtName.Text = txtUom.Text = txtStock.Text = txtPrice.Text = txtSell.Text = "";
-            btnAdd.Text = "Tambah";
             btnDel.Enabled = false;
             btnCancel.Enabled = false;
+            btnEdit.Enabled = false;
         }
 
-        private void btnDel_Click_1(object sender, EventArgs e)
+        private void btnDel_Click(object sender, EventArgs e)
         {
-            using (MySqlConnection db = new MySqlConnection(conn.connect()))
-                try
-                {
-                    db.Open();
-                    MySqlCommand msc = new MySqlCommand("DeleteByID", db);
-                    msc.CommandType = CommandType.StoredProcedure;
-                    msc.Parameters.AddWithValue("_ProductID", this.txtID.Text);
-                    msc.Parameters.AddWithValue("_Barcode", this.txtBar.Text);
-                    MySqlDataReader dr = msc.ExecuteReader();
-                    MessageBox.Show("Sukses Menghapus");
-                    Clear();
-                    GridFill();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            DialogResult dr = MessageBox.Show("Yakin akan Menghapus Data?", stitle, MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                using (MySqlConnection db = new MySqlConnection(conn.connect()))
+                    try
+                    {
+                        db.Open();
+                        MySqlCommand msc = new MySqlCommand("DeleteByID", db);
+                        msc.CommandType = CommandType.StoredProcedure;
+                        msc.Parameters.AddWithValue("_ProductID", txtID.Text);
+                        msc.Parameters.AddWithValue("_Barcode", txtBar.Text);
+                        sdr = msc.ExecuteReader();
+                        MessageBox.Show("Sukses Menghapus");
+                        Clear();
+                        GridFill();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+            }
         }
 
-        private void btnEdit_Click_1(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            DialogResult dr = MessageBox.Show("Yakin akan Mengedit Data?", stitle, MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                using (MySqlConnection db = new MySqlConnection(conn.connect()))
+                    try
+                    {
+                        db.Open();
+                        MySqlCommand msc = new MySqlCommand("EditData", db);
+                        msc.CommandType = CommandType.StoredProcedure;
+                        msc.Parameters.AddWithValue("_ID", txtID.Text);
+                        msc.Parameters.AddWithValue("_Barcode", txtBar.Text);
+                        msc.Parameters.AddWithValue("_Name", txtName.Text);
+                        msc.Parameters.AddWithValue("_Category", txtCat.Text);
+                        msc.Parameters.AddWithValue("_Uom", txtUom.Text);
+                        msc.Parameters.AddWithValue("_CashierPrice", txtPrice.Text);
+                        msc.Parameters.AddWithValue("_BuyPrice", txtBuy.Text);
+                        msc.Parameters.AddWithValue("_SellPrice", txtSell.Text);
+                        msc.Parameters.AddWithValue("_MinStock", txtStock.Text);
+                        sdr = msc.ExecuteReader();
+                        MessageBox.Show("Sukses Mengedit");
+                        Clear();
+                        GridFill();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+            }
         }
 
-        private void btnCancel_Click_1(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             Clear();
         }

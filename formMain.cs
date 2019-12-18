@@ -69,5 +69,17 @@ namespace WildanInventory
             formLogin fl = new formLogin();
             fl.Show();
         }
+
+        private void tambahUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formAddUser fau = new formAddUser();
+            fau.Show();
+            fau.MdiParent = this;
+        }
+
+        private void tabelUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

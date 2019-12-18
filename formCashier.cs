@@ -43,7 +43,7 @@ namespace WildanInventory
                 {
                     db.Open();
                     MySqlCommand mc = new MySqlCommand("SearchFix", db);
-                    mc.CommandType = System.Data.CommandType.StoredProcedure;
+                    mc.CommandType = CommandType.StoredProcedure;
                     mc.Parameters.AddWithValue("_SearchFix", txtBarID.Text);
                     mr = mc.ExecuteReader();
                     int i = 0;
@@ -51,11 +51,10 @@ namespace WildanInventory
                     {
                         i++;
                         dataGridCashier.Rows.Add(mr["pbarcode"].ToString(), mr["pname"].ToString(), mr["pprice"].ToString(), i, mr["pprice"].ToString());
+                        txtBarID.Text = "";
                     }
                     mr.Close();
                     db.Close();
-                    txtBarID.Text = "";
-                    
                 }
                 catch (Exception ex)
                 {
@@ -105,6 +104,11 @@ namespace WildanInventory
         private void btnCancel_Click(object sender, EventArgs e)
         {
             dataGridCashier.Rows.Clear();
+        }
+
+        private void btnCek_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

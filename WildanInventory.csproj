@@ -114,6 +114,12 @@
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="formAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddUser.Designer.cs">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="formCashier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddUser.resx">
+      <DependentUpon>formAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formAdd.resx">
       <DependentUpon>formAdd.cs</DependentUpon>

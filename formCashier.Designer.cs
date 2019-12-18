@@ -29,31 +29,32 @@
         private void InitializeComponent()
         {
             this.dataGridCashier = new System.Windows.Forms.DataGridView();
+            this.barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPay = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHari = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblSubTotal = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblNota = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBarID = new System.Windows.Forms.TextBox();
-            this.barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblNota = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label = new System.Windows.Forms.Label();
+            this.btnCek = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCashier)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -83,16 +84,52 @@
             this.dataGridCashier.Size = new System.Drawing.Size(1495, 412);
             this.dataGridCashier.TabIndex = 0;
             // 
+            // barcode
+            // 
+            this.barcode.HeaderText = "Barcode";
+            this.barcode.MinimumWidth = 8;
+            this.barcode.Name = "barcode";
+            this.barcode.ReadOnly = true;
+            // 
+            // nama
+            // 
+            this.nama.HeaderText = "Nama";
+            this.nama.MinimumWidth = 8;
+            this.nama.Name = "nama";
+            this.nama.ReadOnly = true;
+            // 
+            // harga
+            // 
+            this.harga.HeaderText = "Harga";
+            this.harga.MinimumWidth = 8;
+            this.harga.Name = "harga";
+            this.harga.ReadOnly = true;
+            // 
+            // qty
+            // 
+            this.qty.HeaderText = "Qty";
+            this.qty.MinimumWidth = 8;
+            this.qty.Name = "qty";
+            this.qty.ReadOnly = true;
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "SubTotal";
+            this.subtotal.MinimumWidth = 8;
+            this.subtotal.Name = "subtotal";
+            this.subtotal.ReadOnly = true;
+            // 
             // btnPay
             // 
             this.btnPay.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPay.BackColor = System.Drawing.Color.Lime;
             this.btnPay.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPay.Location = new System.Drawing.Point(1321, 20);
+            this.btnPay.Location = new System.Drawing.Point(1320, 20);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(162, 52);
             this.btnPay.TabIndex = 1;
             this.btnPay.Text = "Bayar";
-            this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -132,10 +169,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.48788F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.51212F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 194F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 184F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187F));
             this.tableLayoutPanel1.Controls.Add(this.btnPay, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnCancel, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblStatus, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 799);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -144,29 +181,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1495, 93);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(1133, 20);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(160, 52);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // lblStatus
             // 
             this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(3, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(971, 93);
+            this.lblStatus.Size = new System.Drawing.Size(968, 93);
             this.lblStatus.TabIndex = 6;
             this.lblStatus.Text = "0";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,8 +224,19 @@
             this.panel3.Size = new System.Drawing.Size(590, 141);
             this.panel3.TabIndex = 7;
             // 
+            // lblNota
+            // 
+            this.lblNota.AutoSize = true;
+            this.lblNota.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNota.Location = new System.Drawing.Point(165, 4);
+            this.lblNota.Name = "lblNota";
+            this.lblNota.Size = new System.Drawing.Size(168, 28);
+            this.lblNota.TabIndex = 6;
+            this.lblNota.Text = "000000000000";
+            // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(170, 50);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -230,6 +265,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(170, 93);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -254,36 +290,6 @@
             this.txtBarID.Size = new System.Drawing.Size(354, 26);
             this.txtBarID.TabIndex = 0;
             this.txtBarID.TextChanged += new System.EventHandler(this.txtBarID_TextChanged);
-            // 
-            // barcode
-            // 
-            this.barcode.HeaderText = "Barcode";
-            this.barcode.MinimumWidth = 8;
-            this.barcode.Name = "barcode";
-            // 
-            // nama
-            // 
-            this.nama.HeaderText = "Nama";
-            this.nama.MinimumWidth = 8;
-            this.nama.Name = "nama";
-            // 
-            // harga
-            // 
-            this.harga.HeaderText = "Harga";
-            this.harga.MinimumWidth = 8;
-            this.harga.Name = "harga";
-            // 
-            // qty
-            // 
-            this.qty.HeaderText = "Qty";
-            this.qty.MinimumWidth = 8;
-            this.qty.Name = "qty";
-            // 
-            // subtotal
-            // 
-            this.subtotal.HeaderText = "SubTotal";
-            this.subtotal.MinimumWidth = 8;
-            this.subtotal.Name = "subtotal";
             // 
             // label1
             // 
@@ -312,16 +318,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(695, 118);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
-            // lblNota
-            // 
-            this.lblNota.AutoSize = true;
-            this.lblNota.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNota.Location = new System.Drawing.Point(165, 4);
-            this.lblNota.Name = "lblNota";
-            this.lblNota.Size = new System.Drawing.Size(168, 28);
-            this.lblNota.TabIndex = 6;
-            this.lblNota.Text = "000000000000";
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -348,11 +344,38 @@
             this.label.TabIndex = 1;
             this.label.Text = "Barcode";
             // 
+            // btnCek
+            // 
+            this.btnCek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCek.BackColor = System.Drawing.Color.White;
+            this.btnCek.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCek.Location = new System.Drawing.Point(1280, 319);
+            this.btnCek.Name = "btnCek";
+            this.btnCek.Size = new System.Drawing.Size(212, 62);
+            this.btnCek.TabIndex = 12;
+            this.btnCek.Text = "Cek Barang";
+            this.btnCek.UseVisualStyleBackColor = false;
+            this.btnCek.Click += new System.EventHandler(this.btnCek_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1129, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 52);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Bayar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // formCashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1495, 892);
+            this.Controls.Add(this.btnCek);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel3);
@@ -384,7 +407,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
@@ -405,5 +427,7 @@
         private System.Windows.Forms.Label lblNota;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Button btnCek;
+        private System.Windows.Forms.Button button1;
     }
 }

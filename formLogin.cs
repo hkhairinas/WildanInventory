@@ -16,6 +16,8 @@ namespace WildanInventory
     public partial class formLogin : Form
     {
         Connection conn = new Connection();
+        MySqlDataReader mr;
+
         public formLogin()
         {
             InitializeComponent();
@@ -44,14 +46,28 @@ namespace WildanInventory
             string upass = txtPass.Text;
             try
             {
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM user WHERE uname='" + uname + "' AND upass ='" + upass + "'", db);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count == 1)
+                string Query = "SELECT * FROM user WHERE uname='" + uname + "' AND upass = MD5('" + upass + "')";
+                MySqlCommand mc = new MySqlCommand(Query, db);
+                mr = mc.ExecuteReader();
+                mr.Read();
+                if (mr.HasRows)
                 {
-                    this.Hide();
-                    formMain fM = new formMain();
-                    fM.Show();
+                    var akses = mr[3].ToString();
+                    var user = mr[1].ToString();
+                    if (akses == "1")
+                    {
+                        MessageBox.Show("Selamat Datang Admin " + user);
+                        this.Hide();
+                        formMain fM = new formMain();
+                        fM.Show();
+                    }
+                    else if(akses == "2")
+                    {
+                        MessageBox.Show("Selamat Datang Kasir " + user);
+                        this.Hide();
+                        formMain fM = new formMain();
+                        fM.Show();
+                    }
                 }
                 else
                 {
@@ -71,7 +87,6 @@ namespace WildanInventory
             txtUser.Text = "";
             txtPass.Clear();
             txtUser.Focus();
-
         }
     }
 }
